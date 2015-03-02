@@ -1,0 +1,109 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<script type="text/javascript" src="Book_sample.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+
+
+	<style type="text/css">
+
+.headbar ul li{
+	display: inline;
+	padding: 20px;
+	margin-left: 100px;
+	border:1px dashed red;
+	background-color: pink;
+	
+}
+.headbar ul li:hover{
+	background-color:silver;
+	border:1px solid yellow;
+}
+#slideS {
+	margin-left: 150px;
+	margin-right: 30px;
+}
+#dis {
+	font-size:20px;
+	color:blue;
+}
+	
+	</style>
+</head>
+<body>
+	<button>Click here</button>
+	<h1>Now am here</h1>
+	<h1 style='display:none'>AND NOW AM NOT</h1>
+	<div class ="headbar">
+		<ul>
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ul>
+	</div>
+	<div id="sidebar">
+		<h3>Find a DropZone</h3>
+			<ul>
+				<li>sideone</li>
+				<li>sidetwo</li>
+				<li>sidethree</li>
+				<li>sidefour</li>
+				<li>sidefive</li>
+				<li>sidesix</li>
+			</ul>
+	</div>
+		<p id="mainpara">Skydive! What is the first thing that pops into your mind? Crazy, daredevils who constantly  live on the edge in every aspects of their lives.<br>Nothing could be further from the truth.<br>After many years of contaplating making my first jump, I finally made the leap at a small drop zone in the state of New Jersey</p>
+
+		<div id='slideS'>
+			<img src="https://d3h9j6pjreamyv.cloudfront.net/boards/nzone-skydive/nzone-nzoneskydive-nzoneskydiving/3e51ec00b6f011e4b44c0d4c643fdf54/11007779_756825977746177_1597603716_n/skydive-200x200">
+			<img src="https://d3h9j6pjreamyv.cloudfront.net/boards/nzone-skydive/nzone-nzoneskydive-nzoneskydiving/767d78d27b8c65556d730000d5d35cf8/53d057de406711e3b68a22000a1f9af0_8/skydive-200x200">
+			<img src="https://d3h9j6pjreamyv.cloudfront.net/boards/nzone-skydive/nzone-nzoneskydive-nzoneskydiving/1a6ca17099d811e48f85ebdd83c1dade/10903728_1597251620493893_1829740437_n/tandem-skydive-200x200">
+			<img src="https://d3h9j6pjreamyv.cloudfront.net/boards/nzone-skydive/nzone-nzoneskydive-nzoneskydiving/cad08b407b3711e49e5a05e0205b4ab6/10817555_770461396358024_1008059024_n/skydive-tandem-200x200">
+		</div>
+		<p id="dis">Click on the Picture to make it disapper, then click on this Text so it to can disapper.</p>
+
+	<script>
+		$(document).ready(function(){
+			$('#mainpara').fadeOut(2000);{
+				$('#mainpara').fadeIn(4500);{
+					$('img').click(function(){
+						$(this).slideUp();
+						 });
+				}
+				}	
+			});
+							$('button').click(function(){
+						 	  $('h1').toggle();
+						 	});
+							$('#dis').click(function(){
+								$(this).slideUp();
+							});
+	</script>
+	
+	<h2>cheat sheet</h2>
+	
+	<p>
+		if statement			if(10 > 9){
+		console.log("message here");}
+		else{
+		console.log||document.write("do this");}			<hr>
+		functions<br>
+		function name(num1,num2,num3){<br>
+		return||console.log||alert num1+num2+num3;
+		}<br>
+		call the function<br>name(55,5,77);<br>
+		Loops
+		for(var i=0;i<||>||==somenumber;i++){<br>
+		console.log(i);<br>}
+		arrays<br>var name=[24,true,"marcos"];
+		for(var i=0;i<||>||==name.length;i++){<br>
+		console.log(i[#]);
+		}<br>While loops<br>var marcos=true;<br>
+		while(marcos){cosole.log("this is how we do it");<br>
+		marcos=false;
+		}<br> comment line//  || multipe lines /*manylines<br>comment here<br> and here<br>comments*/
+	</p>
+
+</body>
+</html>
